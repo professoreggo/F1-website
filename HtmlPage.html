@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Racing</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script type="text/javascript">
+        function playSound() {
+            var audio = document.getElementById('loginSound');
+            audio.play();
+        }
+
+        window.onload = function() {
+            playSound();
+        };
+    </script>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <h1>Welcome to the Home Page</h1>
+            <audio id="loginSound" src="mostafaP/teamInfo/drivers/audiores/box-box-box-box-f1-made-with-Voicemod.mp3" preload="auto"></audio>
+        </div>
+    </form>
+    <header class="navbar">
+        <nav>
+            <a href="https://www.formula1.com" target="_blank">F1 Website</a>
+            <a href="../mostafaP/Teams.html">Teams</a>
+            <a href="resultPage.html">Race Schedule</a>
+            <a href="userhome.aspx">Store</a>
+
+        </nav>
+        <div class="right-side">
+            <a href="Signup.aspx">
+                <button>Sign Up</button>
+            </a>
+            <a href="Signin.aspx">
+                <button>Sign in</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+
+            <h1>.</h1>
+            <a href="https://www.formula1.com/en/latest">
+                <button>Live Races</button>
+            </a>
+        </section>
+    </main>
+
+
+
+</body>
+</html>

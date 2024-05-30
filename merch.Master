@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="merch.master.cs" Inherits="Phase_1_project.merch" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header, #footer {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+            background-color: darkred; /* Added background color */
+            color: white; /* Added text color */
+            padding: 10px 0; /* Added padding for better appearance */
+        }
+        #header {
+            font-size: large;
+        }
+        #footer {
+            margin-top: 20px;
+        }
+        #main-content {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main-content">
+            <div id="header">
+                <asp:Label ID="Label2" runat="server" Text="Welcome To Forumla 1 site"></asp:Label>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <!-- Content from individual pages will be placed here -->
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <asp:Label ID="Label1" runat="server" Text="F1 website&amp;copy; 2024"></asp:Label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

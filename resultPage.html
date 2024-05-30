@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formula 1 Race Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+        h1 {
+            color: whitesmoke;
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: darkred;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="images/f1_logo.png" alt="Formula 1 Logo">
+        <h1>Upcoming Formula 1 Races</h1>
+    </div>
+    <table id="raceTable">
+        <tr>
+            <th>Race Name</th>
+            <th>Circuit Name</th>
+            <th>Date</th>
+            <th>Winner</th>
+        </tr>
+    </table>
+
+    <!-- Include the JavaScript file -->
+    <script src="JavaScript.js"></script>
+</body>
+</html>
